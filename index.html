@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Safe Sourcing Maps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,27 +33,47 @@
             margin: 0 1em;
             text-decoration: none;
         }
-        .company-section {
+        .company-section, .metrics-section {
             margin-bottom: 2em;
+        }
+        .bar-chart {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1em;
+        }
+        .bar {
+            width: 100px;
+            background-color: #4CAF50;
+            text-align: center;
+            color: white;
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+        .tier-1 {
+            height: 60px; /* Adjust height for visual representation of 60% */
+        }
+        .tier-2 {
+            height: 61px; /* Adjust height for visual representation of 61% */
         }
     </style>
 </head>
 <body>
     <header>
-        <<h1>Safe Sourcing Website</h1>
+        <h1>Safe Sourcing Maps</h1>
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#Companies">Projects</a>
-        <a href="#Metrics">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
     <main>
         <section id="about">
             <h2>About: </h2>
-            <p>Here are the sourcing maps and other information related to market mapping for the key roles we have filled..</p>
+            <p>Here are the sourcing maps and other information related to market mapping for the key roles we have filled.</p>
         </section>
         <section id="projects" class="company-section">
-            <p>Here are some of the companies mapping :</p>
+            <h2>Companies Mapping</h2>
+            <p>Here are some of the companies we have mapped:</p>
             <ul>
                 <li>Tier 1 companies:</li>
                 <ul>
@@ -80,12 +100,34 @@
                 </ul>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Companies Response Metrics</h2>
+        <section id="metrics" class="metrics-section">
+            <h2>Sourcing Metrics</h2>
+            <p>Total Candidates Sourced:</p>
+            <ul>
+                <li>Tier 1: 910</li>
+                <li>Tier 2: 520</li>
+            </ul>
+            <p>Total Candidates Responded:</p>
+            <ul>
+                <li>Tier 1: 545</li>
+                <li>Tier 2: 316</li>
+            </ul>
+            <p>Response Rates:</p>
+            <div class="bar-chart">
+                <div class="bar tier-1">60%</div>
+                <div class="bar tier-2">61%</div>
+            </div>
         </section>
         <section>
-            <h2>Sourcing Maps</h2>
-            <p>Additional notes</p>
+            <h2>Sourcing Channels</h2>
+            <ul>
+                <li>Direct Headhunting</li>
+                <li>LinkedIn</li>
+                <li>Job Boards</li>
+                <li>Professional Forums and Communities</li>
+                <li>Talent Pools and Databases</li>
+                <li>Social Media</li>
+            </ul>
         </section>
     </main>
     <footer>
