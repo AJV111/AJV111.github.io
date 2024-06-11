@@ -43,7 +43,6 @@
         }
         .bar {
             width: 100px;
-            background-color: #4CAF50;
             text-align: center;
             color: white;
             padding-top: 5px;
@@ -51,9 +50,40 @@
         }
         .tier-1 {
             height: 60px; /* Adjust height for visual representation of 60% */
+            background-color: #4CAF50;
         }
         .tier-2 {
             height: 61px; /* Adjust height for visual representation of 61% */
+            background-color: #FF5733;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .chart {
+            width: 45%;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .pie-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: conic-gradient(
+                #4CAF50 0% 60%, 
+                #FF5733 60% 100%
+            );
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        .pie-chart span {
+            position: absolute;
+            font-size: 24px;
+            color: white;
         }
     </style>
 </head>
@@ -68,7 +98,7 @@
     </nav>
     <main>
         <section id="about">
-            <h2>About: </h2>
+            <h2>About</h2>
             <p>Here are the sourcing maps and other information related to market mapping for the key roles we have filled.</p>
         </section>
         <section id="projects" class="company-section">
@@ -104,14 +134,29 @@
             <h2>Sourcing Metrics</h2>
             <p>Total Candidates Sourced:</p>
             <ul>
-                <li>Tier 1: 162</li>
-                <li>Tier 2: 248</li>
-    
+                <li>Tier 1: 910</li>
+                <li>Tier 2: 520</li>
+            </ul>
+            <p>Total Candidates Responded:</p>
+            <ul>
+                <li>Tier 1: 545</li>
+                <li>Tier 2: 316</li>
             </ul>
             <p>Response Rates:</p>
-            <div class="bar-chart">
-                <div class="bar tier-1">60%</div>
-                <div class="bar tier-2">61%</div>
+            <div class="chart-container">
+                <div class="chart">
+                    <h3>Response Rates Bar Chart</h3>
+                    <div class="bar-chart">
+                        <div class="bar tier-1">60%</div>
+                        <div class="bar tier-2">61%</div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h3>Response Rates Pie Chart</h3>
+                    <div class="pie-chart">
+                        <span>60% / 61%</span>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
