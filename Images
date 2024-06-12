@@ -1,20 +1,24 @@
-jagannathvineet@Jagannaths-MBP ~ % Jagannaths-MBP:~ jagannathvineet$ cd ~/Desktop/my_website
-jagannathvineet@Jagannaths-MBP ~ % Jagannaths-MBP:~ jagannathvineet$ cd ~/Desktop/my_website
-jagannathvineet@Jagannaths-MBP ~ % Jagannaths-MBP:~ jagannathvineet$ cd ~/Desktop/my_website
-Jagannaths-MBP:my_website jagannathvineet$ git add .
-Jagannaths-MBP:my_website jagannathvineet$ git commit -m "Update HTML and add heatmap image"
-[main 1a2b3c4] Update HTML and add heatmap image
- 2 files changed, 10 insertions(+), 2 deletions(-)
- create mode 100644 images/output copy.png
-Jagannaths-MBP:my_website jagannathvineet$ git push -u origin main
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (5/5), 432 bytes | 432.00 KiB/s, done.
-Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/AJV111/AJV111.github.io.git
- * [new branch]      main -> main
-Branch 'main' set up to track remote branch 'main' from 'origin'.
+Last login: Wed Jun 12 12:05:54 on ttys000
+jagannathvineet@Jagannaths-MBP ~ % cd ~/Desktop/my_website
+ls
+ls images
+git add .
+git commit -m "Update HTML and add heatmap image"
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
