@@ -57,4 +57,132 @@
             height: 61px; /* Adjust height for visual representation of 61% */
             background-color: #81C784; /* Slightly different light green */
         }
-        .chart
+        .chart-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .chart {
+            width: 45%;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .pie-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: conic-gradient(
+                #66BB6A 0% 60%, 
+                #81C784 60% 100%
+            );
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        .pie-chart span {
+            position: absolute;
+            font-size: 24px;
+            color: white;
+        }
+        .heatmap {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .heatmap img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Safe Sourcing Maps</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#metrics">Metrics & Data</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Here are the sourcing maps and other information related to market mapping for the key roles we have filled.</p>
+        </section>
+        <section id="projects" class="company-section">
+            <h2>Companies Mapping</h2>
+            <p>Here are some of the companies we have mapped:</p>
+            <ul>
+                <li>Tier 1 companies:</li>
+                <ul>
+                    <li>SoundCloud</li>
+                    <li>Klarna</li>
+                    <li>Zalando</li>
+                    <li>Delivery Hero</li>
+                    <li>Wayfair</li>
+                    <li>Hello Fresh</li>
+                    <li>Trade Republic</li>
+                </ul>
+            </ul>
+            <ul style="margin-top: 2em;">
+                <li>Tier 2 companies:</li>
+                <ul>
+                    <li>Taxfix</li>
+                    <li>Quandoo</li>
+                    <li>Glassnode</li>
+                    <li>Omni</li>
+                    <li>Contentful</li>
+                    <li>Elinvar</li>
+                    <li>Tourlane</li>
+                    <li>Finoa</li>
+                </ul>
+            </ul>
+        </section>
+        <section id="metrics" class="metrics-section">
+            <h2>Sourcing Metrics</h2>
+            <p>Total Candidates Contacted:</p>
+            <ul>
+                <li>Tier 1: 184</li>
+                <li>Tier 2: 236</li>
+            </ul>
+            <p>Response Rates:</p>
+            <div class="chart-container">
+                <div class="chart">
+                    <h3>Response Rates Bar Chart</h3>
+                    <div class="bar-chart">
+                        <div class="bar tier-1">60%</div>
+                        <div class="bar tier-2">61%</div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h3>Response Rates Pie Chart</h3>
+                    <div class="pie-chart">
+                        <span>60% / 61%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heatmap">
+                <h3>Response Rate Heatmap</h3>
+                <img src="images/output copy.png" alt="Response Rate Heatmap for Tier 1 and Tier 2 Companies">
+            </div>
+        </section>
+        <section>
+            <h2>Sourcing Channels</h2>
+            <ul>
+                <li>Direct Headhunting</li>
+                <li>LinkedIn</li>
+                <li>Job Boards</li>
+                <li>Professional Forums and Communities</li>
+                <li>Talent Pools and Databases</li>
+                <li>Social Media</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Safe Sourcing Maps</p>
+    </footer>
+</body>
+</html>
