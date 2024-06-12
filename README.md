@@ -17,3 +17,7 @@ git add .
 git commit -m "Add response rate heatmap"
 git remote add origin https://github.com/AJV111/AJV111.github.io.git
 git push -u origin main
+my_website/
+├── index.html
+└── images/
+    └── output copy.png
