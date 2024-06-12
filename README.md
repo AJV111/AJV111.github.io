@@ -1,9 +1,7 @@
-# Safe Sourcing Maps
-
-This project showcases the sourcing maps and other information related to market mapping for key roles filled.
-
-## Project Structure
-
+my_website/
+├── index.html
+└── images/
+    └── output copy.png
 
 ## Instructions to Set Up and Deploy
 
